@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Movies</title>
 
@@ -39,7 +40,7 @@
                     @if (Route::has('login'))
                         <div>
                             @auth
-                                <a href="{{ route('user.profile') }}">Profile</a>
+                                <a href="#">Profile</a>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">Logout</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">

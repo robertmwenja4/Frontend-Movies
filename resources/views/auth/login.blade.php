@@ -5,9 +5,9 @@
     <h1 class="fs-2 fw-bold">LOGIN</h1>
 </div>
 
-<div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center h-75">
 
-    <div class="card p-lg-4 w-50 bg-secondary">
+    <div class="card p-lg-4 h-75 w-50 bg-secondary">
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <div class="mb-3">

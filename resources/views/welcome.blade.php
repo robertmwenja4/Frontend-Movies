@@ -11,6 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <style>
+            .custom-product{
+                height: 450px;
+            }
+        </style>
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-success">

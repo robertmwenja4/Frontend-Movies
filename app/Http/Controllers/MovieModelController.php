@@ -14,7 +14,8 @@ class MovieModelController extends Controller
      */
     public function index()
     {
-        //
+        $movies = MovieModel::all();
+        return view('home',['slider'=>$movies]);
     }
 
     /**

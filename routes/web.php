@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\UserController;
+use App\Http\Controllers\MovieModelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [MovieModelController::class, 'index']);
+Route::get('/index', [UserController::class,'index']);

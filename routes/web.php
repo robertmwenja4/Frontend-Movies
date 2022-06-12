@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [MovieModelController::class, 'index']);
 Route::get('/index', [UserController::class,'index']);
+Route::post('/add-movie', [MovieModelController::class, 'store']);

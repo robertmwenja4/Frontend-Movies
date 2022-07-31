@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 Route::get('/', [MovieModelController::class, 'index']);
-Route::get('/index', [UserController::class,'index']);
+Route::get('/index', [UserController::class,'index'])->name('movies.create');
 Route::post('/add-movie', [MovieModelController::class, 'store']);

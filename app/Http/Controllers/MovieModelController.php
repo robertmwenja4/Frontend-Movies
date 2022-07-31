@@ -36,18 +36,7 @@ class MovieModelController extends Controller
      */
     public function store(Request $request)
     {
-        $req = new MovieModel();
-        $req->title = $request->input('title');
-        //$request->movie_image = $request->input('movie_image');
-        if($request->hasfile('movie_image')){
-            $file = $request->file('movie_image');
-            $extension = $file->getClientOriginalExtension();
-            $filename = time().'.'.$extension;
-            $file->move('images/',$filename);
-            $req->movie_image = $filename;
-        }
-        $req->save();
-        return redirect()->with('status','Movie Added Successfully');
+        
     }
 
     /**

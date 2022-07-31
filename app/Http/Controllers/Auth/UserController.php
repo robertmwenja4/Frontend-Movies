@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\MovieModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -35,7 +37,18 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $req = new MovieModel();
+        $req->title = $request->input('title');
+        //$request->movie_image = $request->input('movie_image');
+        if($request->hasfile('movie_image')){
+            $file = $request->file('movie_image');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time().'.'.$extension;
+            $file->move('images/',$filename);
+            $req->movie_image = $filename;
+        }
+        $req->save();
+        return redirect(route('movies.create'));
     }
 
     /**

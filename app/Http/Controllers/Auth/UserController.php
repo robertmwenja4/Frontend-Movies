@@ -40,15 +40,15 @@ class UserController extends Controller
         $req = new MovieModel();
         $req->title = $request->input('title');
         //$request->movie_image = $request->input('movie_image');
-        if($request->hasfile('movie_image')){
+        if ($request->hasfile('movie_image')) {
             $file = $request->file('movie_image');
             $extension = $file->getClientOriginalExtension();
-            $filename = time().'.'.$extension;
-            $file->move('images/',$filename);
+            $filename = time() . '.' . $extension;
+            $file->move('images/', $filename);
             $req->movie_image = $filename;
         }
         $req->save();
-        return redirect(route('movies.create'));
+        return redirect('movies.index');
     }
 
     /**

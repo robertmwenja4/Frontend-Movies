@@ -42,14 +42,27 @@
         </button>
       </div>
 </div>
+<h2 class="mt-2 mb-3">Movies Category</h2>
 <div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100">
         <img src="{{ url('images/bruno.jpeg') }}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Movie Title 1</h5>
+          <p class="card-text">Descrption of the movie 1</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 8 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{ url('images/bruno.jpeg') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Movie Title 2</h5>
+          <p class="card-text">Description of movie 2</p>
         </div>
         <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
@@ -60,27 +73,16 @@
       <div class="card h-100">
         <img src="{{ url('images/bruno.jpeg') }}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Movie title 3</h5>
+          <p class="card-text">Desc using 3(Category)</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="{{ url('images/bruno.jpeg') }}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
+          <small class="text-muted">Last updated 15 mins ago</small>
         </div>
       </div>
     </div>
   </div>
 </div>
+<h2 class="mt-5">Featured Movies</h2>
 
 @endsection

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\UserController;
 use App\Http\Controllers\MovieModelController;
+use App\Http\Controllers\UI\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 Route::get('/', [MovieModelController::class, 'index']);
-Route::get('/index', [UserController::class,'index'])->name('movies.create');
+Route::get('/index', [UserController::class, 'index'])->name('movies.create');
 Route::post('/add-movie', [MovieModelController::class, 'store']);
+Route::get('/movies', [HomeController::class, 'index'])->name('movies');

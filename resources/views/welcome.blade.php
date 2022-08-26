@@ -35,7 +35,7 @@
                             <a class="nav-link text-dark fw-normal fs-6" href="{{ url('index') }}">Movies Upload</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark fw-normal fs-6" href="#">View Movies</a>
+                                <a class="nav-link text-dark fw-normal fs-6" href="{{ url('/movies') }}">View Movies</a>
                             </li>
                         </ul>
                     </div>

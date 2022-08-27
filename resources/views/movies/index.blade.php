@@ -14,7 +14,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ url('add-movie') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ url('/add-movie') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group mb-3">
                             <label for="">Movie Title:</label>

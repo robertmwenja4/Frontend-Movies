@@ -45,10 +45,10 @@ class UserController extends Controller
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
             $file->move('images/', $filename);
-            $req->movie_image = $filename;
+            $req->movie_image = $file;
         }
         $req->save();
-        return redirect('movies.index');
+        return view('movies.index');
     }
 
     /**

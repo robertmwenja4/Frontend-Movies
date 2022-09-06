@@ -206,10 +206,10 @@
                 <a href="#!" class="text-white">Your Account</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Become an Affiliate</a>
+                <a href="#!" class="text-white">Categories</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Shipping Rates</a>
+                <a href="#!" class="text-white">Upcoming Movies</a>
               </p>
               <p>
                 <a href="#!" class="text-white">Help</a>
